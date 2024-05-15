@@ -12,6 +12,6 @@ client = mqtt.Client()
 client.on_connect = on_connect
 client.on_message = on_message
 
-client.connect("192.168.0.113", 1883, 60)  # Conecte-se ao broker MQTT
+client.connect("MQTT_SERVER_IP", 1883, 60)  # Conecte-se ao broker MQTT
 
 client.loop_forever()  # Mantenha o cliente conectado e recebendo mensagens
